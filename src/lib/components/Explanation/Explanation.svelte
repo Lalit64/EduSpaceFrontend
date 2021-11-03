@@ -4,7 +4,7 @@
 
 	let videos = [];
 	const getPosts = () => {
-		axios.get('http://eduspace-gxp.herokuapp.com').then((res) => {
+		axios.get('https://eduspace-gxp.herokuapp.com').then((res) => {
 			videos = res.data.video;
 			console.log(videos);
 		});

@@ -7,16 +7,18 @@
 	class:hidden
 	class="w-1/2 h-2/4 absolute top-1/4 rounded-xl z-50 dark:bg-gray-700 shadow-lg flex items-center justify-center"
 >
-	<iframe
-		width="980"
-		height="500"
-		src={`https://www.youtube.com/embed/${src}`}
-		title="YouTube video player"
-		frameborder="0"
-		allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-		allowfullscreen
-		class="rounded-xl"
-	/>
+	{#if hidden === false}
+		<iframe
+			width="980"
+			height="500"
+			src={`https://www.youtube.com/embed/${src}`}
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+			allowfullscreen
+			class="rounded-xl"
+		/>
+	{/if}
 	<button
 		on:click={() => {
 			hidden = true;

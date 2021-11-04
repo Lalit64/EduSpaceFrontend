@@ -15,6 +15,9 @@
 			location.replace('/');
 		}
 	}
+
+	export let home;
+	export let about;
 </script>
 
 <div class="nav w-full sticky h-16 top-0 z-50 dark:bg-gray-800 flex justify-center">
@@ -25,10 +28,10 @@
 	</div>
 	<div class="flex items-center text-body dark:text-white">
 		<div class="m-3">
-			<a href="/" class="active relative">Home</a>
+			<a href="/" class="relative" class:active={home}>Home</a>
 		</div>
 		<div class="m-3">
-			<a href="" class="relative">About</a>
+			<a href="/about" class="relative" class:active={about}>About</a>
 		</div>
 		<button
 			on:click={signOut}

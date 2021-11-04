@@ -12,7 +12,7 @@
 	<slot />
 {/if}
 
-<style global>
+<style global lang="postcss">
 	@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
 	* {
@@ -25,7 +25,7 @@
 
 	/* width */
 	::-webkit-scrollbar {
-		width: 13px;
+		width: 6px;
 		background: transparent;
 	}
 
@@ -38,7 +38,6 @@
 	::-webkit-scrollbar-thumb {
 		@apply bg-accent;
 		border-radius: 10px;
-		border: 4px solid #1f2a37;
 	}
 
 	/* Handle on hover */

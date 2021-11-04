@@ -1,0 +1,28 @@
+<script>
+	import Navbar from '$lib/components/Navbar/Navbar.svelte';
+</script>
+
+<main
+	class="flex items-center flex-col justify-center dark:bg-gray-800 w-screen h-screen text-body dark:text-white"
+>
+	<Navbar about={true} home={false} />
+	<div class="flex items-center flex-col justify-center w-1/3 h-screen">
+		<h1 class="text-2xl font-bold mb-20 self-start">About</h1>
+		<p class="font-semibold lg:w-full space-y-2">
+			Hi, Welcome to EduSpace this web application was created for a hackathon with the theme of
+			"United Nations SDGs (Sustainable Development Goals)". This app was made by a group of three
+			people with the goal being to notify everyone all around the world about the global crisis'
+			related to Hunger , Poverty, Pollution etc. As the world advances, there are still a lot to be
+			done in order to build a world of prosperity, equality, and many other important values we
+			treasure. The only way we can do that is by promoting the SDGs made by the UN. That is what
+			drove us to develop this web application. With user authentication, recent topics around the
+			world and videos explaining all the SDGs this web application is fully featured with all the
+			needs of a basic application.
+		</p>
+		<h2 class="text-xl font-bold self-start mt-4">
+			Authors:
+			<br />
+			<h3 class="text-lg mt-2 text-center">Lalit Y., Ian C., Manit K.</h3>
+		</h2>
+	</div>
+</main>

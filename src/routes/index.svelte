@@ -16,7 +16,7 @@
 <div class="flex items-center flex-col dark:bg-gray-800">
 	{#if $user}
 		<main class="flex flex-col items-center w-screen h-auto dark:bg-gray-800">
-			<Navbar />
+			<Navbar home={true} about={false} />
 			<VideoSlides />
 			<main class="h-screen w-1/2 dark:bg-gray-800">
 				<Explanation />

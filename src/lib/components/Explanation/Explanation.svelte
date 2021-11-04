@@ -1,6 +1,7 @@
 <script>
 	import axios from 'axios';
 	import { onMount } from 'svelte';
+	import Modal from '$lib/components/Modal.svelte';
 
 	let videos = [];
 	const getPosts = () => {
@@ -9,28 +10,35 @@
 			console.log(videos);
 		});
 	};
+
 	onMount(getPosts);
+
+	let hidden = true;
+	let src;
 </script>
+
+<Modal {hidden} {src} />
 
 <main class="w-full flex flex-col">
 	<h1 class="text-3xl font-bold dark:text-white text-body">About These SDG's</h1>
 	<!--	prettier-ignore-->
 	<div class="flex p-3 h-full w-full flex-col">
-			{#each videos as video}
-				<div class="m-4">
-					<h1 class="dark:text-white font-bold text-xl mb-2">
-						{video.name}
-					</h1>
-					{#each video.source as source}
-						<button class="w-1/4 m-2" on:click={() => {
-						console.log("click")
+        {#each videos as video}
+            <div class="m-6">
+                <h1 class="dark:text-white font-bold text-xl mb-2">
+                    {video.name}
+                </h1>
+                {#each video.source as source}
+                    <button class="w-1/4 m-2 hover:scale-110 transition duration-300" on:click={() => {
+							src = source;
+							hidden = !hidden
 					}}>
-							<img class="w-full rounded-lg" src={`https://i.ytimg.com/vi/${source}/maxresdefault.jpg`} >
-						</button>
-					{/each}
-				</div>
-			{/each}
-		</div>
+                        <img class="w-full rounded-lg" src={`https://i.ytimg.com/vi/${source}/maxresdefault.jpg`}>
+                    </button>
+                {/each}
+            </div>
+        {/each}
+    </div>
 </main>
 
 <style>
@@ -44,5 +52,9 @@
 			align-items: center;
 			justify-content: center;
 		}
+	}
+
+	.absolute {
+		overflow: hidden;
 	}
 </style>

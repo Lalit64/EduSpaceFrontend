@@ -3,12 +3,13 @@
 </script>
 
 <Carousel autoplay={9000} perPage={{ 800: 1, 500: 1 }} duration={1500} draggable={false}>
-	<div class="slide-content">
+	<div class="slide-content ">
 		<a href="https://youtu.be/pXDx6DjNLDU" target="_blank">
 			<img
 				src="https://i.ytimg.com/vi/pXDx6DjNLDU/maxresdefault.jpg"
 				alt="Kitten 1"
 				draggable="false"
+				class="hover:scale-110 transition duration-300"
 			/>
 		</a>
 	</div>
@@ -18,6 +19,7 @@
 				src="https://i.ytimg.com/vi/U7nJBFjKqAY/maxresdefault.jpg"
 				alt="Kitten 1"
 				draggable="false"
+				class="hover:scale-110 transition duration-300"
 			/>
 		</a>
 	</div>
@@ -27,6 +29,7 @@
 				src="https://i.ytimg.com/vi/cV2gBU6hKfY/maxresdefault.jpg"
 				alt="Kitten 1"
 				draggable="false"
+				class="hover:scale-110 transition duration-300"
 			/>
 		</a>
 	</div>
@@ -35,7 +38,8 @@
 			<img
 				src="https://i.ytimg.com/vi/HPJKxAhLw5I/maxresdefault.jpg"
 				alt="Kitten 1"
-				draggable="true"
+				draggable="false"
+				class="hover:scale-110 transition duration-300"
 			/>
 		</a>
 	</div>

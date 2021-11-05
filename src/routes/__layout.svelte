@@ -8,6 +8,9 @@
 	});
 </script>
 
+<svelte:head>
+	<title>EduSpace | GXP</title>
+</svelte:head>
 {#if isReady}
 	<slot />
 {/if}

@@ -7,9 +7,7 @@
 >
 	<Navbar about={true} home={false} />
 	<div class="flex items-center flex-col justify-center w-1/3 h-screen">
-		<div
-			class="w-full h-1/2 dark:bg-gray-700 bg-gray-300 rounded-lg p-3 flex items-center flex-col "
-		>
+		<div class="w-full dark:bg-gray-700 bg-gray-300 rounded-lg p-3 flex items-center flex-col ">
 			<h1 class="text-2xl font-bold mb-20 self-start">About</h1>
 			<p class="font-semibold lg:w-full space-y-2">
 				Hi, Welcome to EduSpace this web application was created for a hackathon with the theme of
@@ -27,6 +25,7 @@
 				<br />
 				<h3 class="text-lg mt-2 text-center">Lalit Y., Ian C., Manit K.</h3>
 			</h2>
+			<video src="/graphics/About.mp4" class="rounded-lg" controls />
 		</div>
 	</div>
 </main>

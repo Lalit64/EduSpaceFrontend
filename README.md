@@ -171,13 +171,12 @@ Project Link: [https://github.com/Lalit64/EduSpaceFrontend](https://github.com/L
 <div style="display: flex;" >
   <div style="margin: 1rem; display: flex; align-items: center; justify-content: center; flex-direction: column;">
 
-@DopeWebIllustrator
-
+[@DopeWebIllustrator](https://github.com/DopeWebIllustrator)
 <img src="https://avatars.githubusercontent.com/u/88322175?v=4" style="border-radius: 100%;" alt="Manit" width="100"/>
   </div>
   <div style="margin: 1rem; display: flex; align-items: center; justify-content: center; flex-direction: column;">
 
-@Ian4634
+[@Ian4634](https://github.com/Ian4634)
 
 <img src="https://avatars.githubusercontent.com/u/78289187?v=4" style="border-radius: 100%;" alt="Ian" width="100"/>
   </div>

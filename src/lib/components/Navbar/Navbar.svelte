@@ -18,22 +18,33 @@
 
 	export let home;
 	export let about;
+	export let action;
 </script>
 
 <div class="nav w-full sticky h-16 top-0 z-50 dark:bg-gray-800 flex justify-center">
 	<div class="h-full w-1/2 flex items-center justify-between dark:text-white text-body">
-		<h1 class="font-bold flex text-xl">
+		<a class="font-bold flex text-xl" href="/">
 			<img src="/graphics/Logo.svg" alt="" class="w-7 mr-2" /> EduSpace
-		</h1>
+		</a>
 	</div>
 	<div class="flex items-center text-body dark:text-white">
 		<div class="m-3">
-			<a href="/" class="relative" class:active={home}>Home</a>
+			<a href="/" class="relative active:text-accent hover:scale-110" class:active={home}>Home</a>
 		</div>
 		<div class="m-3">
-			<a href="/about" class="relative" class:active={about}>About</a>
+			<a href="/about" class="relative active:text-accent hover:scale-110" class:active={about}
+				>About</a
+			>
 		</div>
-		<a href="https://github.com/Lalit64/EduSpaceFinal" class="dark:text-white text-body">
+		<div class="m-3">
+			<a href="/action" class="relative active:text-accent hover:scale-110" class:active={action}
+				>Take Action</a
+			>
+		</div>
+		<a
+			href="https://github.com/Lalit64/EduSpaceFinal"
+			class="dark:text-white text-body active:text-accent mx-2 hover:scale-110"
+		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				class="icon icon-tabler icon-tabler-brand-github"
@@ -71,13 +82,13 @@
 		@apply bg-accent rounded-full absolute w-full h-1/6;
 		content: '';
 		left: 0;
-		top: 1.5rem;
+		top: 1.7rem;
 	}
 
 	.relative:hover:after {
 		@apply bg-accent rounded-full absolute w-full h-1/6;
 		content: '';
 		left: 0;
-		top: 1.5rem;
+		top: 1.7rem;
 	}
 </style>

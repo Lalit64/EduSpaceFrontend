@@ -75,7 +75,7 @@
 
 ## About The Project
 
-![Product Name Screen Shot](https://raw.githubusercontent.com/Lalit64/EduSpaceFrontend/main/img.png)
+![Product Name Screen Shot](https://raw.githubusercontent.com/Lalit64/EduSpaceFinal/main/img.png)
 
 Hi, Welcome to EduSpace this web application was created for a hackathon with the theme of "United Nations SDGs (
 Sustainable Development Goals)". This app was made by a group of three people with the goal being to notify everyone all

@@ -103,7 +103,7 @@ application is fully featured with all the needs of a basic application.
    ```sh
    npm install
    ```
-3.Enter your Supabase Anon and URL in `.env`
+3.Enter your Supabase Anon and URL in `.env` remeber to delete `.env.example`
    ```dotenv
    VITE_SUPABASE_ANON_KEY=YOURANONKEY
    VITE_SUPABASE_URL=YOURURL

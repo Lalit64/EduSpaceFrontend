@@ -1,7 +1,7 @@
 <script>
 	import axios from 'axios';
 	import { onMount } from 'svelte';
-	import Modal from '$lib/components/Modal.svelte';
+	import Modal from '$lib/components/Modal/Modal.svelte';
 
 	let videos = [];
 	const getPosts = () => {
@@ -15,9 +15,10 @@
 
 	let hidden = true;
 	let src;
+    let name;
 </script>
 
-<Modal {hidden} {src} />
+<Modal bind:hidden {src} {name} />
 
 <main class="w-full flex flex-col">
 	<h1 class="text-3xl font-bold dark:text-white text-body">About These SDG's</h1>
@@ -31,6 +32,7 @@
                 {#each video.source as source}
                     <button class="w-1/4 m-2 hover:scale-110 transition duration-300" on:click={() => {
 							src = source;
+                            name = video.name;
 							hidden = !hidden
 					}}>
                         <img class="w-full rounded-lg" src={`https://i.ytimg.com/vi/${source}/maxresdefault.jpg`}>

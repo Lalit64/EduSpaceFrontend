@@ -25,7 +25,7 @@
 				<br />
 				<h3 class="text-lg mt-2 text-center">Lalit Y., Ian C., Manit K.</h3>
 			</h2>
-			<video src="/graphics/About.mp4" class="rounded-lg" controls />
+			<video src="/graphics/About.mp4" class="rounded-lg" controls></video>
 		</div>
 	</div>
 </main>
